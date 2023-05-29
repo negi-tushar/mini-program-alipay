@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.poster {
+  width: 120px;
+  height: 180px;
+  margin-right: 16px;
+}
+
+.details {
+  flex: 1;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.genre {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #ffcc00;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.watch-now {
+  background-color: #00aaff;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+}

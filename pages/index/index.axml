@@ -1,0 +1,14 @@
+<view class="container">
+  <image class="poster" src="movie_poster.jpg"></image>
+  <view class="details">
+    <text class="title">Movie Title\n</text>  
+      <text class="genre">Action, Adventure\n</text>
+    <text class="rating">Rating: 8.5/10\n</text>
+    <text class="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Pellentesque gravida nulla ut nibh dignissim, at convallis elit sodales.
+      Fusce efficitur mi ac gravida lacinia.
+    </text>
+    <button class="watch-now">Watch Now</button>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "Book Tickets",
+  "usingComponents": {
+    "card": "mini-ali-ui/es/card/index",
+    "container": "mini-ali-ui/es/container/index"}
+
+  
+}
