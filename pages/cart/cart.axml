@@ -1,0 +1,22 @@
+
+<view class="container">
+  <view class="cart-items">
+    <block a:for="{{cartItems}}">
+      <view class="cart-item">
+        <image class="cart-item-image" src="{{item.image}}"></image>
+        <view class="cart-item-details">
+          <text class="cart-item-title">{{item.title}}\n</text>
+          <text class="cart-item-price">Price: {{item.price}}</text>
+          <text a:if="{{ item.quantity >1 }}" class="cart-item-quantity" >*  {{item.quantity}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="container">
+    <view class="cart-header">
+      <text class="cart-header-title">Cart</text>
+      <text class="cart-total">Total: $ {{totalPrice}}</text>
+    </view>
+  <button class="buy-button" onTap="calculateTotalPrice" disabled ={{cartItems.length<1}}>Buy</button>
+</view>
+

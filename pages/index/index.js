@@ -12,7 +12,10 @@ Page({
   },
   onReady() {
 
-    
+    my.navigateTo({
+      url: '/pages/product/product'
+      //'/pages/product/product'
+    });
   },
   onShow() {
     // 页面显示

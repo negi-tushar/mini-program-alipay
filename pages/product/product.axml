@@ -1,0 +1,34 @@
+
+<view class="container">
+  <!-- Cart Icon with Badge -->
+  <view class="cart-icon" onTap="navigateToCart">
+    <image class="cart-icon-image" src="../../assets/shopping-cart.png"></image>
+    <view class="cart-badge">
+      <text class="cart-badge-text">{{totalItems}}</text>
+    </view>
+  </view>
+
+  <view class="product-grid">
+    <block a:for="{{products}}">
+      <view class="product-item">
+        <image class="product-image" src="{{item.image}}" mode="aspectFit"></image>
+        <view class="product-info">
+          <text class="product-title">{{item.title.length > 20 ? item.title.substring(0, 20) + '...' : item.title}}\n</text>
+          <text class="product-price">{{item.price}}</text>
+        </view>
+        <button class="add-to-cart-button" onTap="addToCart" data-id="{{item.id}}">Add to Cart</button>
+      </view>
+    </block>
+  </view>
+  <view class="fab-container" onTap="navigateToCart">
+    <image class="fab-icon" src="https://img.uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/shopping-cart-icon.svg"></image>
+
+    <view class="fab-icon">
+      <text class="fab-icon-text">{{ totalItems }}</text>
+    </view>
+  </view>
+</view>
+
+
+
+  

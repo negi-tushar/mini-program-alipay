@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="location-info">
+    <text>Latitude: {{latitude}}</text>
+    <text>Longitude: {{longitude}}</text>
+    <text>Accuracy: {{accuracy}}</text>
+  </view>
+  <button class="location-button" onTap="getLocation">Get Location</button>
+</view>
+
+<image class="fab-icon" src="../../assets/shopping-cart.png"></image>

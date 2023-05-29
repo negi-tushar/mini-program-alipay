@@ -1,5 +1,5 @@
 <view class="container">
-  <image class="poster" src="movie_poster.jpg"></image>
+  <image class="poster" src="https://img.uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/shopping-cart-icon.svg"></image>
   <view class="details">
     <text class="title">Movie Title\n</text>  
       <text class="genre">Action, Adventure\n</text>
