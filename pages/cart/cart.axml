@@ -17,6 +17,7 @@
       <text class="cart-header-title">Cart</text>
       <text class="cart-total">Total: $ {{totalPrice}}</text>
     </view>
-  <button class="buy-button" onTap="calculateTotalPrice" disabled ={{cartItems.length<1}}>Buy</button>
+  <button class="buy-button" onTap="buy" disabled ={{cartItems.length<1}}>Buy</button>
 </view>
+
 

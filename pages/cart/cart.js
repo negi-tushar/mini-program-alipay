@@ -85,12 +85,18 @@ Page({
           cartItems:  cartItem,
         });
       }).then(()=>
-      my.hideLoading(),
-      this.calculateTotalPrice())
+      this.calculateTotalPrice()).then(()=>       my.hideLoading(),
+      )
       .catch((error) => {
         console.error('Error loading cart items:', error);
       });
      // this.calculateTotalPrice();
 
+  },
+
+   buy(){
+    my.navigateTo({
+      url: '/pages/checkout/checkout?cartTotal='  + this.data.totalPrice
+    });
   }
 });

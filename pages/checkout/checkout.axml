@@ -1,0 +1,24 @@
+<view class="page" >
+  <text class="title">Payment Page</text>
+  <form class="form">
+    <view class="form-field">
+      <text class="label">Name:</text>
+      <input class="input" name="name" placeholder="Enter your name" value="{{formData.name}}" bindinput="handleInputChange" />
+    </view>
+    <view class="form-field">
+      <text class="label">Email:</text>
+      <input class="input" name="email" placeholder="Enter your email" value="{{formData.email}}" bindinput="handleInputChange" />
+    </view>
+    <view class="form-field">
+      <text class="label">Address 1:</text>
+      <input class="input" name="address1" placeholder="Enter address line 1" value="{{formData.address1}}" bindinput="handleInputChange" />
+    </view>
+    <view class="form-field">
+      <text class="label">Address 2:</text>
+      <input class="input" name="address2" placeholder="Enter address line 2" value="{{formData.address2}}" bindinput="handleInputChange" />
+    </view>
+    <view class="form-field">
+      <button class="pay-button" bindtap="handlePay">Pay ({{cartTotal}})</button>
+    </view>
+  </form>
+</view>

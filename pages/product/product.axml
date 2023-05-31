@@ -1,12 +1,14 @@
 
 <view class="container">
   <!-- Cart Icon with Badge -->
-  <view class="cart-icon" onTap="navigateToCart">
+  <!-- <view class="cart-icon" onTap="navigateToCart">
     <image class="cart-icon-image" src="../../assets/shopping-cart.png"></image>
     <view class="cart-badge">
       <text class="cart-badge-text">{{totalItems}}</text>
     </view>
-  </view>
+  </view> -->
+
+  <view class="heading"><text>Latest Trends</text> </view>
 
   <view class="product-grid">
     <block a:for="{{products}}">
@@ -30,5 +32,35 @@
 </view>
 
 
+<view class="container">
+  <view class="page">
+    <!-- Your page content goes here -->
+  </view>
 
+  <!-- Bottom navigation bar -->
+  <!-- <view class="bottom-nav">
+    <navigator url="/pages/home/home" open-type="switchTab">
+      <view class="nav-item">
+        <image class="nav-icon" src="/path/to/home-icon.png"></image>
+        <text class="nav-text">Home</text>
+      </view>
+    </navigator>
+    
+    <navigator url="/pages/cart/cart" open-type="switchTab">
+      <view class="nav-item">
+        <image class="nav-icon" src="/path/to/cart-icon.png"></image>
+        <text class="nav-text">Cart</text>
+      </view>
+    </navigator>
+    
+    <navigator url="../../pages/cart/cart
+    " open-type="switchTab">
+      <view class="nav-item">
+        <image class="nav-icon" src="https://img.uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/shopping-cart-icon.svg"></image>
+
+          <text class="nav-text">{{ totalItems }}</text>
+      </view>
+    </navigator>
+  </view> -->
+</view>
   
